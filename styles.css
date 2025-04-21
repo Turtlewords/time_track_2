@@ -162,8 +162,24 @@ body {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     background-color: var(--navy-900);
     border-radius: 16px;
+    padding: 1rem;
+}
+
+.content-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /* Typography */
 
@@ -171,7 +187,15 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+}
+
 #inner-user p {
+    margin: 0;
+}
+
+.content-bottom p {
     margin: 0;
 }
 
