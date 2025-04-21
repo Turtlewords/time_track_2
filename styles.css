@@ -1,0 +1,188 @@
+:root {
+
+    /* Colors */
+
+    --white: #FFFFFF;
+    --black: #000000;
+    --navy-200: #BBC0FF;
+    --navy-800: #33397A;
+    --navy-900: #1C204B;
+    --navy-950: #0E1323;
+    --orange-300: #FF8B64;
+    --purple-500: #7078C9;
+    --purple-600: #5747EA;
+    --purple-700: #7335D2;
+    --blue-300: #55C2E6;
+    --pink-400: #FF5E7D;
+    --green-400: #4BCF82;
+    --yellow-300: #F1C75B;
+    --grey-200: #D8D8D8;
+
+    /* Spacing */
+
+    --space-0: 0px;
+    --space-100: 8px;
+    --space-200: 16px;
+    --space-300: 24px;
+    --space-400: 32px;
+    --space-500: 40px;
+
+    /* Text Presets */
+
+    .text-one {
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        font-size: 56px;
+        line-height: 66px;
+    }
+
+    .text-two {
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .text-three {
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .text-four {
+        font-family: "Rubik", sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .text-five-med {
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .text-five {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .text-six {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+}
+
+.rubik-font {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300 900;
+    font-style: normal;
+  }
+
+  *,*::before, *::after {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: var(--navy-950);
+    color: white;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#container {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#user {
+    background-color: var(--navy-900);
+    border-radius: 16px;
+
+}
+
+#user-top {
+    background-color: var(--purple-600);
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#inner-user {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+#timeframes {
+    background-color: var(--navy-900);
+    padding: var(--space-200);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-500);
+    padding-block: 1.5rem;
+    border-radius: 16px;
+}
+
+#timeframes button {
+    font-family: inherit;
+    border: none;
+    background-color: inherit;
+    color: var(--purple-500);
+}
+
+#timeframes button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+.card {
+    background-color: var(--orange-300);
+    padding-block-start: 1.5rem;
+    background-image: url("images/icon-work.svg");
+    background-repeat: no-repeat;
+    background-position: top -8px right 5px;
+    border-radius: 16px;
+}
+
+#content {
+    background-color: var(--navy-900);
+    border-radius: 16px;
+}
+/* Typography */
+
+h1 {
+    margin: 0;
+}
+
+#inner-user p {
+    margin: 0;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
+#jeremy-pic {
+    width: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
