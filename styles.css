@@ -151,14 +151,49 @@ body {
     color: white;
 }
 
+#card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
 .card {
-    background-color: var(--orange-300);
-    padding-block-start: 1.5rem;
-    background-image: url("images/icon-work.svg");
+    padding-block-start: 2.5rem;
     background-repeat: no-repeat;
     background-position: top -8px right 5px;
     border-radius: 16px;
+    display: flex;
+    
+}
+
+#work {
+    background-image: url("images/icon-work.svg");
+    background-color: var(--orange-300);
+}
+
+#play {
+    background-color: var(--blue-300);
+    background-image: url("images/icon-play.svg");
+}
+
+#study {
+    background-color: var(--pink-400);
+    background-image: url("images/icon-study.svg");
+}
+
+#exercise {
+    background-color: var(--green-400);
+    background-image: url("images/icon-exercise.svg");
+}
+
+#social {
+    background-color: var(--purple-700);
+    background-image: url("images/icon-social.svg");
+}
+
+#self-care {
+    background-color: var(--yellow-300);
+    background-image: url("images/icon-self-care.svg");
 }
 
 #content {
@@ -167,7 +202,8 @@ body {
     gap: 1rem;
     background-color: var(--navy-900);
     border-radius: 16px;
-    padding: 1rem;
+    padding: 2rem;
+    width: 100%;
 }
 
 .content-top {
@@ -199,6 +235,10 @@ h2 {
     margin: 0;
 }
 
+.white {
+    color: white;
+}
+
 /* Images */
 
 img {
@@ -209,4 +249,41 @@ img {
     width: 70px;
     border: 3px solid white;
     border-radius: 50%;
+}
+
+
+@media (min-width: 768px) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+    #container {
+        flex-direction: row;
+    }
+
+    #user {
+        max-width: 200px;
+        
+    }
+
+    #user-top {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 5rem;
+    }
+
+    #timeframes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
