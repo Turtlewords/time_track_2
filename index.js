@@ -30,7 +30,7 @@ async function displayDaily() {
     data.forEach((activity) => {
         element += 
         `<section class="card" id="${activity.title.toLowerCase().replace(" ", "-")}">
-        <div id="content">
+        <div class="content">
           <div class="content-top">
             <h2 class="activity-title">${activity.title}</h2>
             <img src="images/icon-ellipsis.svg" alt="ellipsis">
@@ -57,7 +57,7 @@ async function displayWeekly() {
     data.forEach((activity) => {
         element += 
         `<section class="card" id="${activity.title.toLowerCase().replace(" ", "-")}">
-        <div id="content">
+        <div class="content">
           <div class="content-top">
             <h2 class="activity-title">${activity.title}</h2>
             <img src="images/icon-ellipsis.svg" alt="ellipsis">
@@ -84,7 +84,7 @@ async function displayMonthly() {
     data.forEach((activity) => {
         element += 
         `<section class="card" id="${activity.title.toLowerCase().replace(" ", "-")}">
-        <div id="content">
+        <div class="content">
           <div class="content-top">
             <h2 class="activity-title">${activity.title}</h2>
             <img src="images/icon-ellipsis.svg" alt="ellipsis">

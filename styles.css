@@ -117,16 +117,16 @@ body {
 #user-top {
     background-color: var(--purple-600);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 2.5rem 2rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #inner-user {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    
 }
 
 
@@ -135,7 +135,7 @@ body {
     padding: var(--space-200);
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 12%;
     padding-block: 1.5rem;
     border-radius: 16px;
 }
@@ -200,14 +200,18 @@ body {
     background-image: url("images/icon-self-care.svg");
 }
 
-#content {
+.content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    
     background-color: var(--navy-900);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
+}
+
+.content:hover {
+    background-color: var(--navy-800);
 }
 
 .content-top {
@@ -220,6 +224,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 /* Typography */
 
@@ -233,7 +238,7 @@ h1 {
 h2 {
     margin: 0;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 21px; 
 }
 
@@ -255,9 +260,9 @@ h2 {
 
 .prev {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
-    color: var(--purple-500);
+    color: var(--navy-200);
 }
 
 .content-bottom p {
@@ -290,34 +295,49 @@ img {
     }
 
     #container {
-        max-width: 750px;
+        width: 90%;
+        max-width: 800px;
     }
 
     #card-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 225px 225px;
+    }
+
+    .content {
+        gap: 1rem;
+        padding: 2rem;
     }
 
     .content-bottom {
         flex-direction: column;
-        gap: 1rem;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .current {
+        font-size: 50px;
     }
 }
+
+
 
 @media (min-width: 1400px) {
     #container {
         flex-direction: row;
-        width: 975px;
-        flex-grow: 0;
+        max-width: 1250px;
+        
     }
 
     #user {
-        max-width: 200px;
+        width: 240px;
         
     }
 
     #card-container {
-        grid-template-columns: repeat(3, 225px);
+        grid-template-columns: repeat(3, 240px);
+        grid-template-rows: 1fr 1fr;
     }
 
     #user-top {
