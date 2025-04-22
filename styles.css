@@ -105,6 +105,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    flex-grow: 1;
 }
 
 #user {
@@ -134,7 +135,7 @@ body {
     padding: var(--space-200);
     display: flex;
     justify-content: center;
-    gap: var(--space-500);
+    gap: 10%;
     padding-block: 1.5rem;
     border-radius: 16px;
 }
@@ -144,6 +145,9 @@ body {
     border: none;
     background-color: inherit;
     color: var(--purple-500);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
 }
 
 #timeframes button:hover {
@@ -221,14 +225,39 @@ body {
 
 h1 {
     margin: 0;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 47px;
 }
 
 h2 {
     margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px; 
 }
+
+#user-top p {
+    color: var(--grey-200)
+}
+
+
 
 #inner-user p {
     margin: 0;
+}
+
+.current {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 66px;
+}
+
+.prev {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--purple-500);
 }
 
 .content-bottom p {
@@ -261,7 +290,7 @@ img {
     }
 
     #container {
-        width: 750px;
+        max-width: 750px;
     }
 
     #card-container {
@@ -279,6 +308,7 @@ img {
     #container {
         flex-direction: row;
         width: 975px;
+        flex-grow: 0;
     }
 
     #user {
@@ -299,5 +329,6 @@ img {
     #timeframes {
         flex-direction: column;
         align-items: flex-start;
+        gap: 1rem;
     }
 }
